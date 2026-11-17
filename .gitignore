@@ -1,51 +1,49 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
+# OS and editor files
 .DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
 .idea/
+*.iml
+*.swp
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Flutter and Dart
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
-/coverage/
+.packages
+build/
+coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
 
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
+# Android build and local configuration
+.gradle/
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+**/android/key.properties
+*.jks
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# iOS/Xcode generated files
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/DerivedData/
+**/ios/xcuserdata/
+**/ios/Runner/GeneratedPluginRegistrant.*
 
 # Python backend
 __pycache__/
 .pytest_cache/
 .venv/
 backend/.env
+
+# Build artifacts
+*.class
+*.log
+*.pyc
+app.*.symbols
+app.*.map.json
